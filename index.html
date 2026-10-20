@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventMate - Discover Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="logo">EventMate</h1>
+            <nav class="nav-links">
+                <a href="#" class="active">Discover</a>
+                <a href="#">My Events</a>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." aria-label="Search events">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h2>Discover Events</h2>
+
+            <!-- Filter Section -->
+            <section class="filter-section" aria-label="Event Filters">
+                <form class="filter-form">
+                    <div class="filter-group">
+                        <label for="category-select">Category</label>
+                        <select id="category-select" name="category">
+                            <option value="Technology">Technology</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Music">Music</option>
+                            <option value="Arts">Arts</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="date-input">Date</label>
+                        <div class="date-input-wrapper">
+                            <input type="text" id="date-input" name="date" placeholder="DD / MM / YYYY" value="">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-apply-filters">Apply Filters</button>
+                </form>
+            </section>
+
+            <!-- Event Results Feed -->
+            <section class="event-feed" aria-label="Event Results">
+                
+                <!-- Event Card 1 -->
+                <article class="event-card">
+                    <div class="event-date-box">
+                        <span class="event-day">25</span>
+                        <span class="event-month">OCT</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Coding Workshop</h3>
+                        <p class="event-location">Computer Lab</p>
+                    </div>
+                    <div class="event-action">
+                        <a href="#" class="btn-view-details">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Event Card 2 -->
+                <article class="event-card">
+                    <div class="event-date-box">
+                        <span class="event-day">28</span>
+                        <span class="event-month">OCT</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Basketball Meetup</h3>
+                        <p class="event-location">Sports Hall</p>
+                    </div>
+                    <div class="event-action">
+                        <a href="#" class="btn-view-details">View Details</a>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
